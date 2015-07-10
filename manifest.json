@@ -1,0 +1,29 @@
+{
+  "name": "YASPS (Yet Another Swipely Portal Switcher)",
+  "description": "This extension provides an easy way to switch between local, staging, and production versions of Swipely portal pages",
+  "version": "0.0.1",
+  "content_scripts": [{
+    "matches": [
+      "https://*.swipely.com/partners/*",
+      "https://swipely.com/partners/*",
+      "http://localhost:*/partners/*"
+    ],
+    "css": [
+      "portal_switcher.css"
+    ],
+    "js": [
+      "/ext/jquery-1.11.3.min.js",
+      "/ext/lodash-3.10.0.js",
+      "portal_switcher.js"
+    ]
+  }],
+  "icons": { "128": "public/portal_switcher.png" },
+  "page_action": {
+    "default_icon": "public/portal_switcher.png"
+  },
+  "web_accessible_resources": [
+    "public/*"
+  ],
+
+  "manifest_version": 2
+}
