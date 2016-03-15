@@ -2,8 +2,8 @@
   console.log("HEYOOO from Swipely Portal Switcher!");
 
   var TARGETS = {
-    "production": "https://swipely.com/",
-    "staging": "https://staging.swipely.com/",
+    "production": "https://app.upserve.com/",
+    "staging": "https://staging-app.upserve.com/",
     "local": "http://localhost:3000/"
   };
 
